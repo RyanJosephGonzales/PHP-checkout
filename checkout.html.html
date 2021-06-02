@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Razer products</title>
+  <link rel="stylesheet" href="./style.css">
+<style>
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-repeat: no-repeat;
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+	color: #696969;
+}
+
+img{
+	width: 100%;
+	height: 200px;
+}
+
+.fa{
+  cursor: pointer;
+}
+
+.header{
+	width: 100%;
+	overflow: auto;
+	background-color: #31353d;
+	color: #00a000;
+	clear: both;
+	padding: 20px 50px;
+	box-sizing: border-box;	
+}
+
+.heading{
+	float: left;
+}
+
+.cart{
+	float: right;
+	text-align: center;
+}
+
+.total-text p{
+	display: inline;
+}
+
+.item{
+	position: relative;
+	float: left;
+	margin: 1%;
+	border: 1px solid #00a000;
+	width: 30%;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.item-detail h4{
+	color: #fff;
+}
+
+.item-detail p{
+	color: #00a000;
+	font-weight: bold;
+}
+
+.prices p{
+	display: inline;
+}
+
+.price-display{
+	float: right;
+}
+
+.remove{
+	background-color: #00a000;
+	border-color:  #00a000;
+	border-radius: 3px;
+	color: #fff;
+	margin: 0px 5px;
+	padding: 0px 2px;
+	float: right;
+}
+
+#list-item li{
+	margin: 10px 0px;
+}
+.finalization {
+		  text-align: center;
+		  margin: 50px 100px 50px 100px;
+		  font-family: Tahoma, Arial, sans-serif;
+		}
+		.finalization .payC {
+		  border: 1px solid rgba(255, 255, 255, 1);
+		  font-family: Tahoma, Arial, sans-serif;
+		}
+.finalize {
+		  text-align: center;
+		  margin-bottom:50px;
+		}
+
+</style>
+</head>
+<body>
+<div class="header">
+		<div class="heading">
+			<img src="https://i.postimg.cc/vHwb7sDX/10-106541-razer-png.png" height="70" width="100" alt="Image resize">
+		</div>
+		<div class="cart">
+			<i class="fa fa-shopping-basket fa-2x"></i>
+      <i class="fa fa-caret-down"></i><br>
+			<div class="total-text">
+				<p>Items</p>
+			</div>
+		</div>
+	</div>
+	<form action="summary.php" method="post">
+	<div class="items-container">
+		<!-- Item 1 -->
+		<div class="item">
+			<img src="https://i.postimg.cc/MpWfHfB8/Razer-Viper-Ultimate-Wireless-Gaming-Mouse-RGB-Charging-Dock.jpg">
+			
+			<div class="item-detail">
+				<label for="Razer1"><h4>Razer Viper Ultimate</h4></label>
+				<div class="prices">
+					<p class="price">7,495</p>
+					<p>Php</p>
+				</div>
+				<label for="razer1qty">Amount:</label>
+				<input type="number" name="razerqty[]" class="razerqty" id="razer1qty" min="0" max="100" value="0"><br>
+			</div>
+		</div>
+
+		<!-- Item 2 -->
+		<div class="item">
+			<img src="https://i.postimg.cc/gkMmyx5p/o-Pw-ATrx-Wwj-N6efy6g-CWWXT.jpg">
+			
+			<div class="item-detail">
+				<label for="Razer2"><h4>Razer Viper</h4></label>
+				<div class="prices">
+					<p class="price">2,395</p>
+					<p>Php</p>
+				</div>
+				<label for="razer2qty">Amount:</label>
+				<input type="number" name="razerqty[]" class="razerqty" id="razer2qty" min="0" max="100" value="0"><br>
+			</div>
+		</div>
+
+		<!-- Item 3 -->
+		<div class="item">
+			<img src="https://i.postimg.cc/rpsJdP4c/90797295-F8799-D31-A6134350-A14-FE5-C9.jpg">
+			
+			<div class="item-detail">
+				<label for="Razer3"><h4>Razer Viper Mini</h4></label>
+				<div class="prices">
+					<p class="price">1,495</p>
+					<p>Php</p>
+				</div>
+				<label for="razer3qty">Amount:</label>
+				<input type="number" name="razerqty[]" class="razerqty" id="razer3qty" min="0" max="100" value="0"><br>
+			</div>
+		</div>
+
+		<!-- Item 4 -->
+		<div class="item">
+			<img src="https://i.postimg.cc/3RgDWXtY/Basilisk-Ultimate-6.jpg">
+			
+			<div class="item-detail">
+				<label for="Razer4"><h4>Razer Basilisk Ultimate</h4></label>
+				<div class="prices">
+					<p class="price">7,995</p>
+					<p>Php</p>
+				</div>
+				<label for="razer4qty">Amount:</label>
+				<input type="number" name="razerqty[]" class="razerqty" id="razer4qty" min="0" max="100" value="0"><br>
+			</div>
+		</div>
+
+		<!-- Item 5 -->
+		<div class="item">
+			<img src="https://i.postimg.cc/j5wCJzvL/https-hybrismediaprod-blob-core-windows-net-sys-master-phoenix-images-container-had-h09-9081448398.jpg">
+			
+			<div class="item-detail">
+				<label for="Razer5"><h4>Razer Basilisk V2</h4></label>
+				<div class="prices">
+					<p class="price">3,995</p>
+					<p>Php</p>
+				</div>
+				<label for="razer5qty">Amount:</label>
+				<input type="number" name="razerqty[]" class="razerqty" id="razer5qty" min="0" max="100" value="0"><br>
+			</div>
+		</div>
+
+		<!-- Item 6 -->
+		<div class="item">
+			<img src="https://i.postimg.cc/kMLY8qM4/https-hybrismediaprod-blob-core-windows-net-sys-master-phoenix-images-container-h67-h0c-9081448431.jpg">
+			
+			<div class="item-detail">
+				<label for="Razer6"><h4>Razer Basilisk X Hyperspeed</h4></label>
+				<div class="prices">
+					<p class="price">2,395</p>
+					<p>Php</p>
+				</div>
+				<label for="razer6qty">Amount:</label>
+				<input type="number" name="razerqty[]" class="razerqty" id="razer6qty" min="0" max="100" value="0"><br>
+			</div>
+		</div>
+		
+		<!-- Item 7 -->
+		<div class="item">
+			<img src="https://i.postimg.cc/8z4qL9n0/razer-deathadder-v2-pro-gallery-11.jpg">
+			
+			<div class="item-detail">
+				<label for="Razer7"><h4>Razer Deathadder V2 Pro</h4></label>
+				<div class="prices">
+					<p class="price">6,495</p>
+					<p>Php</p>
+				</div>
+				<label for="razer7qty">Amount:</label>
+				<input type="number" name="razerqty[]" class="razerqty" id="razer7qty" min="0" max="100" value="0"><br>
+			</div>
+		</div>
+		
+		<!-- Item 8 -->
+		<div class="item">
+			<img src="https://i.postimg.cc/HxD4ns9D/da7dcb2768c549c5d4f27400aa2a2186.jpg">
+			
+			<div class="item-detail">
+				<label for="Razer8"><h4>Razer Deathadder V2</h4></label>
+				<div class="prices">
+					<p class="price">2,995</p>
+					<p>Php</p>
+				</div>
+				<label for="razer8qty">Amount:</label>
+				<input type="number" name="razerqty[]" class="razerqty" id="razer8qty" min="0" max="100" value="0"><br>
+			</div>
+		</div>
+		
+		<!-- Item 9 -->
+		<div class="item">
+			<img src="https://i.postimg.cc/BvQtgWZL/b-F67-Dv-Thg-X6-PTps-Zn-Ui4c-Z-1200-80-png.png">
+			
+			<div class="item-detail">
+				<label for="Razer9"><h4>Razer Deathadder V2 Mini</h4></label>
+				<div class="prices">
+					<p class="price">2,395</p>
+					<p>Php</p>
+				</div>
+				<label for="razer9qty">Amount:</label>
+				<input type="number" name="razerqty[]" class="razerqty" id="razer9qty" min="0" max="100" value="0"><br>
+			</div>
+		</div>
+		
+		<!-- Item 10 -->
+		<div class="item">
+			<img src="https://i.postimg.cc/nr8DTdwy/razer-mamba-elite-gallery-02-gaming-mouse.jpg">
+			
+			<div class="item-detail">
+				<label for="Razer10"><h4>Razer Mamba Elite</h4></label>
+				<div class="prices">
+					<p class="price">4,295</p>
+					<p>Php</p>
+				</div>
+				<label for="razer10qty">Amount:</label>
+				<input type="number" name="razerqty[]" class="razerqty" id="razer10qty" min="0" max="100" value="0"><br>
+			</div>
+		</div>
+	</div>
+	<div class="finalization">
+			    <div class="description"><br>Please enter your information.</div>
+				<div class="ngrid-container">
+					<div class="ngrid-item"><label for="name">Name:</label></div>
+					<!--Customer name-->
+					<div class="ngrid-item"><input type="text" name="name" size="50" required></div>
+				
+					<div class="ngrid-item"><label for="contactno">Contact No:</label></div>
+					<!--Customer contact number-->
+					<div class="ngrid-item"><input type="text" name="contactno" size="50" required></div> 
+					
+					<div class="ngrid-item"><label for="address">Address:</label></div>
+					<!--Customer shipping address-->
+					<div class="ngrid-item"><input type="text" name="address" size="50" required><br><br></div> 
+				
+				
+					<div class="ngrid-item"><label for="discount">Discount Privileges:</label></div>
+					<!--discount-->
+					<div class="ngrid-item">
+						<select name="discount"> 
+						   <option value="none">None</option>
+						   <option value="student">Student</option>
+						   <option value="senior">Senior Citizen</option>
+						   <option value="pwd">PWD</option>
+						</select><br><br>
+					</div>
+					
+					<div class="payC"><label for="payment">Mode of Payment:</label></div>
+					<!--mode of payment-->
+					<div class="ngrid-item">
+						<input type="radio" name="payment" value="visa" required> 
+						<label for="visa" class="mop">Visa</label>
+						<input type="radio" name="payment" value="mastercard" required> 
+						<label for="mastercard" class="mop">Master Card</label>
+						<input type="radio" name="payment" value="gcash" required>
+						<label for="gcash" class="mop">GCash</label>
+					</div>
+					<input type="submit" class="buy" value="Finalize Transaction">
+                </div><br><br><br><br>				
+			</div>
+	</form>
+<!-- partial -->
+  <script src='https://use.fontawesome.com/1fa2e54b22.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+</body>
+</html>
